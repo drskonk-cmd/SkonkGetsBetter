@@ -1,7 +1,17 @@
-MON SUIVI SANTÉ V3
-- Ouvrir index.html pour tester.
-- Installation comme application Android/PWA : nécessite que ce dossier soit servi en HTTPS (ou localhost).
-- Les données de suivi sont stockées localement dans le navigateur.
-- Export/import JSON inclus pour sauvegarde.
-- Migration V2 automatique si V2 est présente sur le même domaine.
-- La dictée dépend du service vocal Android/navigateur.
+MON SUIVI SANTÉ — V2 PWA
+
+Contenu :
+- index.html : application
+- manifest.webmanifest : paramètres d'installation PWA
+- sw.js : fonctionnement hors connexion après installation
+
+Important :
+Une PWA ne peut pas être installée correctement depuis un simple fichier local (file://).
+Les trois fichiers doivent être servis via HTTPS (ou localhost). Une fois hébergée en HTTPS,
+ouvrez index.html avec Chrome sur le Pixel puis utilisez « Installer l'application » ou
+« Ajouter à l'écran d'accueil ».
+
+Données :
+Les données de suivi sont conservées dans localStorage sur l'appareil/navigateur.
+Aucun serveur applicatif n'est utilisé par ce code pour stocker les données.
+Effacer les données du site/navigateur peut donc supprimer l'historique.
