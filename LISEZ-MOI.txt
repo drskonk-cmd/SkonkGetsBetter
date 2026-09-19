@@ -1,0 +1,7 @@
+MON SUIVI SANTÉ V3
+- Ouvrir index.html pour tester.
+- Installation comme application Android/PWA : nécessite que ce dossier soit servi en HTTPS (ou localhost).
+- Les données de suivi sont stockées localement dans le navigateur.
+- Export/import JSON inclus pour sauvegarde.
+- Migration V2 automatique si V2 est présente sur le même domaine.
+- La dictée dépend du service vocal Android/navigateur.
